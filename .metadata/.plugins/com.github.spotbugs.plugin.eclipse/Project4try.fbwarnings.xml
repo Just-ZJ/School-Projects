@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="7" timestamp="1582164873511" analysisTimestamp="1582164873184" release="">
+  <Project projectName="Project4try">
+    <Jar>D:\CSE 2221 Eclipse Workspace\Project4try\bin\RSSRewrite.class</Jar>
+    <AuxClasspathEntry>D:\CSE 2221 Eclipse Workspace\Project4try\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-13.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\Project4try\test</SrcDir>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\Project4try\src</SrcDir>
+  </Project>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="newMthd">
+      <SourceLine classname="newMthd" start="17" end="363" sourcefile="newMthd.java" sourcepath="newMthd.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 19 Feb 2020 21:14:33 -0500" total_classes="1" referenced_classes="23" total_bugs="1" total_size="152" num_packages="1" java_version="13.0.1" vm_version="13.0.1+9" cpu_seconds="0.91" clock_seconds="0.33" peak_mbytes="790.44" alloc_mbytes="1024.00" gc_seconds="0.02" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="2" total_size="152" priority_2="1">
+      <ClassStats class="RSSRewrite" sourceFile="RSSRewrite.java" interface="false" size="152" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="119" invocations="398" avgMicrosecondsPerInvocation="300" maxMicrosecondsPerInvocation="21122" standardDeviationMicrosecondsPerInvocation="1155"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="74" invocations="2" avgMicrosecondsPerInvocation="37458" maxMicrosecondsPerInvocation="70268" standardDeviationMicrosecondsPerInvocation="32809"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="17" invocations="399" avgMicrosecondsPerInvocation="45" maxMicrosecondsPerInvocation="237" standardDeviationMicrosecondsPerInvocation="28"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="363" avgMicrosecondsPerInvocation="35" maxMicrosecondsPerInvocation="612" standardDeviationMicrosecondsPerInvocation="68"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="11" invocations="23" avgMicrosecondsPerInvocation="493" maxMicrosecondsPerInvocation="3214" standardDeviationMicrosecondsPerInvocation="801"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1582163301780" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1582163301780" release="" codeSize="153" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1582163319970" release="" codeSize="153" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1582163357148" release="" codeSize="153" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1582163401904" release="" codeSize="153" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1582163554979" release="" codeSize="153" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1582164819220" release="" codeSize="152" numClasses="1"/>
+  </History>
+</BugCollection>

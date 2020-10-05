@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1587528109082" analysisTimestamp="1587528102657" release="">
+  <Project projectName="NaturalNumberCalculatorthisismine">
+    <Jar>D:\CSE 2221 Eclipse Workspace\NaturalNumberCalculatorthisismine\bin\NNCalcView1$State.class</Jar>
+    <Jar>D:\CSE 2221 Eclipse Workspace\NaturalNumberCalculatorthisismine\bin\NNCalcView1.class</Jar>
+    <AuxClasspathEntry>D:\CSE 2221 Eclipse Workspace\NaturalNumberCalculatorthisismine\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-13.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\NaturalNumberCalculatorthisismine\test</SrcDir>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\NaturalNumberCalculatorthisismine\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 22 Apr 2020 00:01:42 -0400" total_classes="2" referenced_classes="299" total_bugs="0" total_size="181" num_packages="1" java_version="13.0.1" vm_version="13.0.1+9" cpu_seconds="27.75" clock_seconds="6.46" peak_mbytes="724.17" alloc_mbytes="1024.00" gc_seconds="0.10">
+    <PackageStats package="" total_bugs="0" total_types="2" total_size="181">
+      <ClassStats class="NNCalcView1" sourceFile="NNCalcView1.java" interface="false" size="167" bugs="0"/>
+      <ClassStats class="NNCalcView1$State" sourceFile="NNCalcView1.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1448" invocations="1563" avgMicrosecondsPerInvocation="926" maxMicrosecondsPerInvocation="50134" standardDeviationMicrosecondsPerInvocation="2599"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="860" invocations="2" avgMicrosecondsPerInvocation="430230" maxMicrosecondsPerInvocation="613984" standardDeviationMicrosecondsPerInvocation="183754"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="656" invocations="299" avgMicrosecondsPerInvocation="2196" maxMicrosecondsPerInvocation="102996" standardDeviationMicrosecondsPerInvocation="6997"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="619" invocations="299" avgMicrosecondsPerInvocation="2071" maxMicrosecondsPerInvocation="42952" standardDeviationMicrosecondsPerInvocation="4239"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="347" invocations="641" avgMicrosecondsPerInvocation="541" maxMicrosecondsPerInvocation="10023" standardDeviationMicrosecondsPerInvocation="771"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="238" invocations="1568" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="3474" standardDeviationMicrosecondsPerInvocation="191"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="221" invocations="299" avgMicrosecondsPerInvocation="740" maxMicrosecondsPerInvocation="15254" standardDeviationMicrosecondsPerInvocation="1669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="156" invocations="299" avgMicrosecondsPerInvocation="523" maxMicrosecondsPerInvocation="35721" standardDeviationMicrosecondsPerInvocation="2321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="142" invocations="299" avgMicrosecondsPerInvocation="478" maxMicrosecondsPerInvocation="18769" standardDeviationMicrosecondsPerInvocation="1399"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="131" invocations="299" avgMicrosecondsPerInvocation="440" maxMicrosecondsPerInvocation="30313" standardDeviationMicrosecondsPerInvocation="2696"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1587528109078" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

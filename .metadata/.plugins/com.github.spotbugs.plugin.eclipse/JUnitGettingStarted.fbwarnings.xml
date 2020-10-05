@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="2" timestamp="1583516268066" analysisTimestamp="1583516267365" release="">
+  <Project projectName="JUnitGettingStarted">
+    <Jar>D:\CSE 2221 Eclipse Workspace\JUnitGettingStarted\bin\FactoringUtility.class</Jar>
+    <AuxClasspathEntry>D:\CSE 2221 Eclipse Workspace\JUnitGettingStarted\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-13.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\JUnitGettingStarted\src</SrcDir>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\JUnitGettingStarted\test</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 6 Mar 2020 12:37:47 -0500" total_classes="1" referenced_classes="13" total_bugs="0" total_size="39" num_packages="1" java_version="13.0.1" vm_version="13.0.1+9" cpu_seconds="3.88" clock_seconds="0.70" peak_mbytes="455.63" alloc_mbytes="1024.00" gc_seconds="0.06">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="39">
+      <ClassStats class="FactoringUtility" sourceFile="FactoringUtility.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="273" invocations="316" avgMicrosecondsPerInvocation="863" maxMicrosecondsPerInvocation="14759" standardDeviationMicrosecondsPerInvocation="1700"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="165" invocations="2" avgMicrosecondsPerInvocation="82955" maxMicrosecondsPerInvocation="154256" standardDeviationMicrosecondsPerInvocation="71301"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="49" invocations="13" avgMicrosecondsPerInvocation="3826" maxMicrosecondsPerInvocation="30862" standardDeviationMicrosecondsPerInvocation="8255"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="28" invocations="317" avgMicrosecondsPerInvocation="90" maxMicrosecondsPerInvocation="310" standardDeviationMicrosecondsPerInvocation="49"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="19" invocations="282" avgMicrosecondsPerInvocation="69" maxMicrosecondsPerInvocation="871" standardDeviationMicrosecondsPerInvocation="117"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1583516261905" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1583516261908" release="" codeSize="45" numClasses="1"/>
+  </History>
+</BugCollection>

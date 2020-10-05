@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1579639598496" analysisTimestamp="1579639598278" release="">
+  <Project projectName="Newton">
+    <Jar>D:\CSE 2221 Eclipse Workspace\Newton\bin\Newton4.class</Jar>
+    <AuxClasspathEntry>D:\CSE 2221 Eclipse Workspace\Newton\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-13.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\Newton\src</SrcDir>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\Newton\test</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 21 Jan 2020 15:46:38 -0500" total_classes="1" referenced_classes="18" total_bugs="0" total_size="30" num_packages="1" java_version="13.0.1" vm_version="13.0.1+9" cpu_seconds="0.44" clock_seconds="0.22" peak_mbytes="562.90" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="30">
+      <ClassStats class="Newton4" sourceFile="Newton4.java" interface="false" size="30" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="72" invocations="356" avgMicrosecondsPerInvocation="202" maxMicrosecondsPerInvocation="3589" standardDeviationMicrosecondsPerInvocation="408"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="67" invocations="2" avgMicrosecondsPerInvocation="33773" maxMicrosecondsPerInvocation="63389" standardDeviationMicrosecondsPerInvocation="29615"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="20" invocations="357" avgMicrosecondsPerInvocation="56" maxMicrosecondsPerInvocation="9656" standardDeviationMicrosecondsPerInvocation="509"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1579639598496" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

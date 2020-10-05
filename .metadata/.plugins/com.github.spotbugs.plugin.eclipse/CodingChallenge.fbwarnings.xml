@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="41" timestamp="1587747863540" analysisTimestamp="1587747863183" release="">
+  <Project projectName="CodingChallenge">
+    <Jar>D:\CSE 2221 Eclipse Workspace\CodingChallenge\bin\CodeChallenge2.class</Jar>
+    <AuxClasspathEntry>D:\CSE 2221 Eclipse Workspace\CodingChallenge\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-13.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\CodingChallenge\src</SrcDir>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\CodingChallenge\test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="4" last="36" removedByChange="true">
+    <Class classname="CodeChallenge2">
+      <SourceLine classname="CodeChallenge2" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Class>
+    <Method classname="CodeChallenge2" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CodeChallenge2" start="102" end="138" startBytecode="0" endBytecode="217" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Method>
+    <LocalVariable name="in" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="CodeChallenge2" start="102" end="102" startBytecode="7" endBytecode="7" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    <SourceLine classname="CodeChallenge2" start="102" end="102" startBytecode="7" endBytecode="7" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="in"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="4" last="24" removedByChange="true">
+    <Class classname="CodeChallenge2">
+      <SourceLine classname="CodeChallenge2" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Class>
+    <Method classname="CodeChallenge2" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CodeChallenge2" start="91" end="127" startBytecode="0" endBytecode="217" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Method>
+    <LocalVariable name="b" register="4" pc="75" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="CodeChallenge2" start="97" end="97" startBytecode="73" endBytecode="73" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    <SourceLine classname="CodeChallenge2" start="97" end="97" startBytecode="73" endBytecode="73" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="b"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="4" last="24" removedByChange="true">
+    <Class classname="CodeChallenge2">
+      <SourceLine classname="CodeChallenge2" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Class>
+    <Method classname="CodeChallenge2" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CodeChallenge2" start="91" end="127" startBytecode="0" endBytecode="217" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Method>
+    <LocalVariable name="c" register="5" pc="105" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="CodeChallenge2" start="98" end="98" startBytecode="103" endBytecode="103" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    <SourceLine classname="CodeChallenge2" start="98" end="98" startBytecode="103" endBytecode="103" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="c"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="4" last="24" removedByChange="true">
+    <Class classname="CodeChallenge2">
+      <SourceLine classname="CodeChallenge2" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Class>
+    <Method classname="CodeChallenge2" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CodeChallenge2" start="91" end="127" startBytecode="0" endBytecode="217" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Method>
+    <LocalVariable name="d" register="6" pc="124" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="CodeChallenge2" start="99" end="99" startBytecode="122" endBytecode="122" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    <SourceLine classname="CodeChallenge2" start="99" end="99" startBytecode="122" endBytecode="122" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="d"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="34" last="34" removedByChange="true">
+    <Class classname="CodeChallenge2">
+      <SourceLine classname="CodeChallenge2" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Class>
+    <Method classname="CodeChallenge2" name="stringTree" signature="(Lcomponents/xmltree/XMLTree;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="CodeChallenge2" start="85" end="92" startBytecode="0" endBytecode="175" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Method>
+    <SourceLine classname="CodeChallenge2" start="88" end="88" startBytecode="22" endBytecode="22" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="4" last="24" removedByChange="true">
+    <Class classname="CodeChallenge2">
+      <SourceLine classname="CodeChallenge2" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Class>
+    <Method classname="CodeChallenge2" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CodeChallenge2" start="91" end="127" startBytecode="0" endBytecode="686" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Method>
+    <String value="b"/>
+    <Type descriptor="[I"/>
+    <SourceLine classname="CodeChallenge2" start="97" end="97" startBytecode="50" endBytecode="50" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="4" last="24" removedByChange="true">
+    <Class classname="CodeChallenge2">
+      <SourceLine classname="CodeChallenge2" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Class>
+    <Method classname="CodeChallenge2" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CodeChallenge2" start="91" end="127" startBytecode="0" endBytecode="686" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Method>
+    <String value="c"/>
+    <Type descriptor="[I"/>
+    <SourceLine classname="CodeChallenge2" start="98" end="98" startBytecode="76" endBytecode="76" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="4" last="24" removedByChange="true">
+    <Class classname="CodeChallenge2">
+      <SourceLine classname="CodeChallenge2" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Class>
+    <Method classname="CodeChallenge2" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="CodeChallenge2" start="91" end="127" startBytecode="0" endBytecode="686" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+    </Method>
+    <String value="d"/>
+    <Type descriptor="[I"/>
+    <SourceLine classname="CodeChallenge2" start="99" end="99" startBytecode="106" endBytecode="106" sourcefile="CodeChallenge2.java" sourcepath="CodeChallenge2.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 24 Apr 2020 13:04:23 -0400" total_classes="1" referenced_classes="21" total_bugs="0" total_size="74" num_packages="1" java_version="13.0.1" vm_version="13.0.1+9" cpu_seconds="0.77" clock_seconds="0.36" peak_mbytes="768.42" alloc_mbytes="1024.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="74">
+      <ClassStats class="CodeChallenge2" sourceFile="CodeChallenge2.java" interface="false" size="74" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="114" invocations="406" avgMicrosecondsPerInvocation="282" maxMicrosecondsPerInvocation="4902" standardDeviationMicrosecondsPerInvocation="611"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="104" invocations="2" avgMicrosecondsPerInvocation="52116" maxMicrosecondsPerInvocation="98206" standardDeviationMicrosecondsPerInvocation="46089"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="20" invocations="407" avgMicrosecondsPerInvocation="49" maxMicrosecondsPerInvocation="326" standardDeviationMicrosecondsPerInvocation="35"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="14" invocations="371" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="822" standardDeviationMicrosecondsPerInvocation="78"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="11" invocations="21" avgMicrosecondsPerInvocation="569" maxMicrosecondsPerInvocation="3704" standardDeviationMicrosecondsPerInvocation="911"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1587746088038" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1587746088040" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1587746121603" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1587746131214" release="" codeSize="65" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1587746536710" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1587746647200" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1587746670015" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1587746677180" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1587746708133" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1587746724834" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1587746753420" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1587746757330" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1587746779009" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1587746796780" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1587746806752" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1587746840922" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1587746843542" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1587746849767" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1587746859616" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1587746916285" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1587746920813" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1587746930942" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1587746974482" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1587746981621" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1587747029521" release="" codeSize="40" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1587747034247" release="" codeSize="52" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1587747084637" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1587747206363" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1587747227857" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1587747229965" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1587747361419" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1587747408905" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1587747411954" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1587747478804" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1587747505338" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1587747515798" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1587747517975" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1587747564872" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1587747824486" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1587747827677" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1587747853835" release="" codeSize="74" numClasses="1"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="10" timestamp="1582229879120" analysisTimestamp="1582229878795" release="">
+  <Project projectName="Project4RSSReader">
+    <Jar>D:\CSE 2221 Eclipse Workspace\Project4RSSReader\bin\RSSReader.class</Jar>
+    <AuxClasspathEntry>D:\CSE 2221 Eclipse Workspace\Project4RSSReader\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-13.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\Project4RSSReader\test</SrcDir>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\Project4RSSReader\src</SrcDir>
+  </Project>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE" first="1" last="2" removedByChange="true">
+    <Class classname="RSSReader">
+      <SourceLine classname="RSSReader" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Class>
+    <Method classname="RSSReader" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="RSSReader" start="306" end="364" startBytecode="0" endBytecode="646" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Method>
+    <Method classname="components.xmltree.XMLTree" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Method>
+    <SourceLine classname="RSSReader" start="359" end="359" startBytecode="283" endBytecode="283" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    <SourceLine classname="RSSReader" start="359" end="359" startBytecode="283" endBytecode="283" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 20 Feb 2020 15:17:58 -0500" total_classes="1" referenced_classes="23" total_bugs="0" total_size="152" num_packages="1" java_version="13.0.1" vm_version="13.0.1+9" cpu_seconds="1.16" clock_seconds="0.33" peak_mbytes="619.72" alloc_mbytes="1024.00" gc_seconds="0.02">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="152">
+      <ClassStats class="RSSReader" sourceFile="RSSReader.java" interface="false" size="152" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="117" invocations="398" avgMicrosecondsPerInvocation="294" maxMicrosecondsPerInvocation="12453" standardDeviationMicrosecondsPerInvocation="949"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="77" invocations="2" avgMicrosecondsPerInvocation="38643" maxMicrosecondsPerInvocation="72247" standardDeviationMicrosecondsPerInvocation="33604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="14" invocations="7" avgMicrosecondsPerInvocation="2108" maxMicrosecondsPerInvocation="13744" standardDeviationMicrosecondsPerInvocation="4753"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="14" invocations="399" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="232" standardDeviationMicrosecondsPerInvocation="22"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="363" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="887" standardDeviationMicrosecondsPerInvocation="74"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1582133697230" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1582133697233" release="" codeSize="154" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1582133702891" release="" codeSize="154" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1582133720050" release="" codeSize="154" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1582133723546" release="" codeSize="154" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1582134482839" release="" codeSize="122" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1582134496355" release="" codeSize="155" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1582134522409" release="" codeSize="153" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1582229722998" release="" codeSize="151" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1582229850988" release="" codeSize="120" numClasses="1"/>
+  </History>
+</BugCollection>

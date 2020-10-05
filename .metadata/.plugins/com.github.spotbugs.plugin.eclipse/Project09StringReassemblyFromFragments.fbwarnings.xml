@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1587059655159" analysisTimestamp="1587059652088" release="">
+  <Project projectName="Project09StringReassemblyFromFragments">
+    <Jar>D:\CSE 2221 Eclipse Workspace\Project09StringReassemblyFromFragments\bin\StringReassemblyTest.class</Jar>
+    <AuxClasspathEntry>D:\CSE 2221 Eclipse Workspace\Project09StringReassemblyFromFragments\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-13.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\Project09StringReassemblyFromFragments\test</SrcDir>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\Project09StringReassemblyFromFragments\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 16 Apr 2020 13:54:11 -0400" total_classes="1" referenced_classes="22" total_bugs="0" total_size="348" num_packages="1" java_version="13.0.1" vm_version="13.0.1+9" cpu_seconds="15.69" clock_seconds="3.12" peak_mbytes="425.99" alloc_mbytes="1024.00" gc_seconds="0.13">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="348">
+      <ClassStats class="StringReassemblyTest" sourceFile="StringReassemblyTest.java" interface="false" size="348" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1292" invocations="2" avgMicrosecondsPerInvocation="646062" maxMicrosecondsPerInvocation="1014303" standardDeviationMicrosecondsPerInvocation="368240"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="456" invocations="379" avgMicrosecondsPerInvocation="1205" maxMicrosecondsPerInvocation="28400" standardDeviationMicrosecondsPerInvocation="2738"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="91" invocations="22" avgMicrosecondsPerInvocation="4177" maxMicrosecondsPerInvocation="21206" standardDeviationMicrosecondsPerInvocation="5824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="77" invocations="101" avgMicrosecondsPerInvocation="766" maxMicrosecondsPerInvocation="8052" standardDeviationMicrosecondsPerInvocation="1167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="68" invocations="22" avgMicrosecondsPerInvocation="3116" maxMicrosecondsPerInvocation="50100" standardDeviationMicrosecondsPerInvocation="10380"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="67" invocations="22" avgMicrosecondsPerInvocation="3063" maxMicrosecondsPerInvocation="23903" standardDeviationMicrosecondsPerInvocation="5045"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="66" invocations="380" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="1558" standardDeviationMicrosecondsPerInvocation="145"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="53" invocations="29" avgMicrosecondsPerInvocation="1851" maxMicrosecondsPerInvocation="16034" standardDeviationMicrosecondsPerInvocation="2807"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="51" invocations="29" avgMicrosecondsPerInvocation="1789" maxMicrosecondsPerInvocation="13458" standardDeviationMicrosecondsPerInvocation="2311"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="46" invocations="29" avgMicrosecondsPerInvocation="1592" maxMicrosecondsPerInvocation="11213" standardDeviationMicrosecondsPerInvocation="2229"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1587059655158" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

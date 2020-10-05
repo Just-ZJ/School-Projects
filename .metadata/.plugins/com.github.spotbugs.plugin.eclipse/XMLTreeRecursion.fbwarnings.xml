@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="2" timestamp="1583343203736" analysisTimestamp="1583343202787" release="">
+  <Project projectName="XMLTreeRecursion">
+    <Jar>D:\CSE 2221 Eclipse Workspace\XMLTreeRecursion\bin\XMLTreeRecursion.class</Jar>
+    <AuxClasspathEntry>D:\CSE 2221 Eclipse Workspace\XMLTreeRecursion\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\eclipse\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-13.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\XMLTreeRecursion\src</SrcDir>
+    <SrcDir>D:\CSE 2221 Eclipse Workspace\XMLTreeRecursion\test</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 4 Mar 2020 12:33:22 -0500" total_classes="1" referenced_classes="20" total_bugs="0" total_size="54" num_packages="1" java_version="13.0.1" vm_version="13.0.1+9" cpu_seconds="5.20" clock_seconds="0.95" peak_mbytes="465.21" alloc_mbytes="1024.00" gc_seconds="0.04">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="54">
+      <ClassStats class="XMLTreeRecursion" sourceFile="XMLTreeRecursion.java" interface="false" size="54" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="419" invocations="392" avgMicrosecondsPerInvocation="1071" maxMicrosecondsPerInvocation="19699" standardDeviationMicrosecondsPerInvocation="2365"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="173" invocations="2" avgMicrosecondsPerInvocation="86663" maxMicrosecondsPerInvocation="160803" standardDeviationMicrosecondsPerInvocation="74140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="51" invocations="393" avgMicrosecondsPerInvocation="130" maxMicrosecondsPerInvocation="5219" standardDeviationMicrosecondsPerInvocation="283"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="37" invocations="20" avgMicrosecondsPerInvocation="1870" maxMicrosecondsPerInvocation="14940" standardDeviationMicrosecondsPerInvocation="3462"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="27" invocations="358" avgMicrosecondsPerInvocation="77" maxMicrosecondsPerInvocation="1467" standardDeviationMicrosecondsPerInvocation="153"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1583343199502" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1583343199505" release="" codeSize="45" numClasses="1"/>
+  </History>
+</BugCollection>

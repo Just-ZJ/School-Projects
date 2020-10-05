@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;HelloWorld&apos; to &apos;ArraysAndReferences&apos;&#x0D;&#x0A;- Original project: &apos;Lab15ArraysAndReferences&apos;&#x0D;&#x0A;- Original element: &apos;HelloWorld&apos;&#x0D;&#x0A;- Renamed element: &apos;ArraysAndReferences&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;HelloWorld&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{HelloWorld.java[HelloWorld" matchStrategy="1" name="ArraysAndReferences" qualified="false" references="true" similarDeclarations="false" stamp="1582738298181" textual="false" version="1.0"/>
+</session>

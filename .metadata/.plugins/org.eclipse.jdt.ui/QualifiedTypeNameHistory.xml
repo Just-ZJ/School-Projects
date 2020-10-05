@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="components.random.Random"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="components.naturalnumber.NaturalNumber2"/>
+    <fullyQualifiedTypeName name="components.utilities.Reporter"/>
+    <fullyQualifiedTypeName name="components.utilities.FormatChecker"/>
+    <fullyQualifiedTypeName name="components.map.Map2"/>
+    <fullyQualifiedTypeName name="components.queue.Queue2"/>
+    <fullyQualifiedTypeName name="components.map.Map.Pair"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="components.stack.Stack2"/>
+    <fullyQualifiedTypeName name="components.sequence.Sequence"/>
+    <fullyQualifiedTypeName name="components.map.Map"/>
+    <fullyQualifiedTypeName name="components.queue.Queue"/>
+    <fullyQualifiedTypeName name="components.set.Set"/>
+    <fullyQualifiedTypeName name="components.stack.Stack"/>
+</qualifiedTypeNameHistroy>
