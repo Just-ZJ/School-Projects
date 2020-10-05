@@ -1,0 +1,517 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import components.map.Map;
+import components.map.Map.Pair;
+
+/**
+ * JUnit test fixture for {@code Map<String, String>}'s constructor and kernel
+ * methods.
+ *
+ * @author Zheng Ji Tan(tan.955) & Beiwen Wu(wu.4742)
+ *
+ */
+public abstract class MapTest {
+
+    /**
+     * Invokes the appropriate {@code Map} constructor for the implementation
+     * under test and returns the result.
+     *
+     * @return the new map
+     * @ensures constructorTest = {}
+     */
+    protected abstract Map<String, String> constructorTest();
+
+    /**
+     * Invokes the appropriate {@code Map} constructor for the reference
+     * implementation and returns the result.
+     *
+     * @return the new map
+     * @ensures constructorRef = {}
+     */
+    protected abstract Map<String, String> constructorRef();
+
+    /**
+     *
+     * Creates and returns a {@code Map<String, String>} of the implementation
+     * under test type with the given entries.
+     *
+     * @param args
+     *            the (key, value) pairs for the map
+     * @return the constructed map
+     * @requires <pre>
+     * [args.length is even]  and
+     * [the 'key' entries in args are unique]
+     * </pre>
+     * @ensures createFromArgsTest = [pairs in args]
+     */
+    private Map<String, String> createFromArgsTest(String... args) {
+        assert args.length % 2 == 0 : "Violation of: args.length is even";
+        Map<String, String> map = this.constructorTest();
+        for (int i = 0; i < args.length; i += 2) {
+            assert !map.hasKey(args[i]) : ""
+                    + "Violation of: the 'key' entries in args are unique";
+            map.add(args[i], args[i + 1]);
+        }
+        return map;
+    }
+
+    /**
+     *
+     * Creates and returns a {@code Map<String, String>} of the reference
+     * implementation type with the given entries.
+     *
+     * @param args
+     *            the (key, value) pairs for the map
+     * @return the constructed map
+     * @requires <pre>
+     * [args.length is even]  and
+     * [the 'key' entries in args are unique]
+     * </pre>
+     * @ensures createFromArgsRef = [pairs in args]
+     */
+    private Map<String, String> createFromArgsRef(String... args) {
+        assert args.length % 2 == 0 : "Violation of: args.length is even";
+        Map<String, String> map = this.constructorRef();
+        for (int i = 0; i < args.length; i += 2) {
+            assert !map.hasKey(args[i]) : ""
+                    + "Violation of: the 'key' entries in args are unique";
+            map.add(args[i], args[i + 1]);
+        }
+        return map;
+    }
+
+    // TODO - add test cases for constructor, add, remove, removeAny, value,
+    // hasKey, and size
+
+    /*
+     * Test cases for no argument constructors
+     */
+    @Test
+    public final void testNoArgumentConstructor() {
+        /*
+         * Set up variables and call method under test
+         */
+        Map<String, String> n = this.constructorTest();
+        Map<String, String> nExpected = this.constructorRef();
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    /*
+     * Test cases for int hashtablesize constructors
+     */
+    @Test //boundary test case - smallest int acceptable
+    public final void testIntHashTableConstructorInput1() {
+        /*
+         * Set up variables and call method under test
+         */
+        int i = 1;
+        Map<String, String> n = new Map4<>(i);
+        Map<String, String> nExpected = new Map4<>(i);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //routine test case
+    public final void testIntHashTableConstructorInput8() {
+        /*
+         * Set up variables and call method under test
+         */
+        int i = 8;
+        Map<String, String> n = new Map4<>(i);
+        Map<String, String> nExpected = new Map4<>(i);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //routine test case
+    public final void testIntHashTableConstructorInput752() {
+        /*
+         * Set up variables and call method under test
+         */
+        int i = 752;
+        Map<String, String> n = new Map4<>(i);
+        Map<String, String> nExpected = new Map4<>(i);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //boundary test case - largest int acceptable
+    public final void testIntHashTableConstructorInputMaxInt() {
+        /*
+         * Set up variables and call method under test
+         */
+        int i = Integer.MAX_VALUE;
+        Map<String, String> n = new Map4<>(i);
+        Map<String, String> nExpected = new Map4<>(i);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    /*
+     * Kernel methods - Test cases for add
+     */
+    @Test //boundary case
+    public final void testAddtoEmpty() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest();
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5");
+        /*
+         * Call method under test
+         */
+        n.add("first", "5");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //boundary case
+    public final void testAddtoNonEmpty() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15");
+        /*
+         * Call method under test
+         */
+        n.add("second", "15");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //routine case
+    public final void testAdd4KeytoNonEmpty() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15", "third", "85", "fourth", "585", "fifth", "155");
+        /*
+         * Call method under test
+         */
+        n.add("second", "15");
+        n.add("third", "85");
+        n.add("fourth", "585");
+        n.add("fifth", "155");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //routine case
+    public final void testAdd5KeytoEmpty() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest();
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15", "third", "85", "fourth", "585", "fifth", "155");
+        /*
+         * Call method under test
+         */
+        n.add("first", "5");
+        n.add("second", "15");
+        n.add("third", "85");
+        n.add("fourth", "585");
+        n.add("fifth", "155");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    /*
+     * Kernel methods - Test cases for remove
+     */
+    @Test //boundary case - becomes empty map
+    public final void testRemove1KeyFrom1() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5");
+        Map<String, String> nExpected = this.createFromArgsRef();
+        Pair<String, String> resultExpected = new Pair<>("first", "5");
+        /*
+         * Call method under test
+         */
+        Pair<String, String> result = n.remove("first");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    /*
+     * Kernel methods - Test cases for removeAny
+     */
+
+    /*
+     * Kernel methods - Test cases for value
+     */
+    @Test //boundary case
+    public final void testValueOf1InLength1() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5");
+        String resultExpected = "5";
+        /*
+         * Call method under test
+         */
+        String result = n.value("first");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    @Test //challenging case
+    public final void testValueOfAll5InLength5() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5", "second",
+                "15", "third", "85", "fourth", "585", "fifth", "155");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15", "third", "85", "fourth", "585", "fifth", "155");
+        String result1Expected = "5";
+        String result2Expected = "15";
+        String result3Expected = "85";
+        String result4Expected = "585";
+        String result5Expected = "155";
+        /*
+         * Call method under test
+         */
+        String result1 = n.value("first");
+        String result2 = n.value("second");
+        String result3 = n.value("third");
+        String result4 = n.value("fourth");
+        String result5 = n.value("fifth");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(result1Expected, result1);
+        assertEquals(result2Expected, result2);
+        assertEquals(result3Expected, result3);
+        assertEquals(result4Expected, result4);
+        assertEquals(result5Expected, result5);
+    }
+
+    @Test //routine case
+    public final void testValueOf1InLength5() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5", "second",
+                "15", "third", "85", "fourth", "585", "fifth", "155");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15", "third", "85", "fourth", "585", "fifth", "155");
+        String resultExpected = "15";
+        /*
+         * Call method under test
+         */
+        String result = n.value("second");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    @Test //routine case
+    public final void testValueOf2InLength5() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5", "second",
+                "15", "third", "85", "fourth", "585", "fifth", "155");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15", "third", "85", "fourth", "585", "fifth", "155");
+        String result1Expected = "5";
+        String result2Expected = "15";
+        String result5Expected = "155";
+        /*
+         * Call method under test
+         */
+        String result1 = n.value("first");
+        String result2 = n.value("second");
+        String result5 = n.value("fifth");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(result1Expected, result1);
+        assertEquals(result2Expected, result2);
+        assertEquals(result5Expected, result5);
+    }
+
+    /*
+     * Kernel methods - Test cases for hasKey
+     */
+    @Test //boundary case - true
+    public final void testHasKeyTrue() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5");
+        boolean resultExpected = true;
+        /*
+         * Call method under test
+         */
+        boolean result = n.hasKey("first");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    @Test //boundary case - false
+    public final void testHasKeyFalse() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5");
+        boolean resultExpected = false;
+        /*
+         * Call method under test
+         */
+        boolean result = n.hasKey("second");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    @Test //routine case - true
+    public final void testHasKeyTrueinLength5() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5", "second",
+                "15", "third", "85", "fourth", "585", "fifth", "155");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15", "third", "85", "fourth", "585", "fifth", "155");
+        boolean resultExpected = true;
+        /*
+         * Call method under test
+         */
+        boolean result = n.hasKey("third");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    @Test //routine case - false
+    public final void testHasKeyFalseinLength5() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5", "second",
+                "15", "third", "85", "fourth", "585", "fifth", "155");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15", "third", "85", "fourth", "585", "fifth", "155");
+        boolean resultExpected = false;
+        /*
+         * Call method under test
+         */
+        boolean result = n.hasKey("none");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    /*
+     * Kernel methods - Test cases for size
+     */
+    @Test //boundary case
+    public final void testSize0() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest();
+        Map<String, String> nExpected = this.createFromArgsRef();
+        int resultExpected = 0;
+        /*
+         * Call method under test
+         */
+        int result = n.size();
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    @Test //routine case
+    public final void testSize1() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5");
+        int resultExpected = 1;
+        /*
+         * Call method under test
+         */
+        int result = n.size();
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+
+    @Test //routine case
+    public final void testSize5() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5", "second",
+                "15", "third", "85", "fourth", "585", "fifth", "155");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15", "third", "85", "fourth", "585", "fifth", "155");
+        int resultExpected = 5;
+        /*
+         * Call method under test
+         */
+        int result = n.size();
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+        assertEquals(resultExpected, result);
+    }
+}
