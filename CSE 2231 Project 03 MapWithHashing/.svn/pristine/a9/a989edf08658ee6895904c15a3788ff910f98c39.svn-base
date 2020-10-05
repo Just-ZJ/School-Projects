@@ -1,0 +1,218 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import components.map.Map;
+
+/**
+ * JUnit test fixture for {@code Map<String, String>}'s constructor and kernel
+ * methods.
+ *
+ * @author Zheng Ji Tan(tan.955) & Beiwen Wu(wu.4742)
+ *
+ */
+public abstract class MapTest {
+
+    /**
+     * Invokes the appropriate {@code Map} constructor for the implementation
+     * under test and returns the result.
+     *
+     * @return the new map
+     * @ensures constructorTest = {}
+     */
+    protected abstract Map<String, String> constructorTest();
+
+    /**
+     * Invokes the appropriate {@code Map} constructor for the reference
+     * implementation and returns the result.
+     *
+     * @return the new map
+     * @ensures constructorRef = {}
+     */
+    protected abstract Map<String, String> constructorRef();
+
+    /**
+     *
+     * Creates and returns a {@code Map<String, String>} of the implementation
+     * under test type with the given entries.
+     *
+     * @param args
+     *            the (key, value) pairs for the map
+     * @return the constructed map
+     * @requires <pre>
+     * [args.length is even]  and
+     * [the 'key' entries in args are unique]
+     * </pre>
+     * @ensures createFromArgsTest = [pairs in args]
+     */
+    private Map<String, String> createFromArgsTest(String... args) {
+        assert args.length % 2 == 0 : "Violation of: args.length is even";
+        Map<String, String> map = this.constructorTest();
+        for (int i = 0; i < args.length; i += 2) {
+            assert !map.hasKey(args[i]) : ""
+                    + "Violation of: the 'key' entries in args are unique";
+            map.add(args[i], args[i + 1]);
+        }
+        return map;
+    }
+
+    /**
+     *
+     * Creates and returns a {@code Map<String, String>} of the reference
+     * implementation type with the given entries.
+     *
+     * @param args
+     *            the (key, value) pairs for the map
+     * @return the constructed map
+     * @requires <pre>
+     * [args.length is even]  and
+     * [the 'key' entries in args are unique]
+     * </pre>
+     * @ensures createFromArgsRef = [pairs in args]
+     */
+    private Map<String, String> createFromArgsRef(String... args) {
+        assert args.length % 2 == 0 : "Violation of: args.length is even";
+        Map<String, String> map = this.constructorRef();
+        for (int i = 0; i < args.length; i += 2) {
+            assert !map.hasKey(args[i]) : ""
+                    + "Violation of: the 'key' entries in args are unique";
+            map.add(args[i], args[i + 1]);
+        }
+        return map;
+    }
+
+    // TODO - add test cases for constructor, add, remove, removeAny, value,
+    // hasKey, and size
+
+    /*
+     * Test cases for no argument constructors
+     */
+    @Test
+    public final void testNoArgumentConstructor() {
+        /*
+         * Set up variables and call method under test
+         */
+        Map<String, String> n = this.constructorTest();
+        Map<String, String> nExpected = this.constructorRef();
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    /*
+     * Test cases for int hashtablesize constructors
+     */
+    @Test //boundary test case - smallest int acceptable
+    public final void testIntHashTableConstructorInput1() {
+        /*
+         * Set up variables and call method under test
+         */
+        int i = 1;
+        Map<String, String> n = new Map4<>(i);
+        Map<String, String> nExpected = new Map4<>(i);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //routine test case
+    public final void testIntHashTableConstructorInput8() {
+        /*
+         * Set up variables and call method under test
+         */
+        int i = 8;
+        Map<String, String> n = new Map4<>(i);
+        Map<String, String> nExpected = new Map4<>(i);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //routine test case
+    public final void testIntHashTableConstructorInput752() {
+        /*
+         * Set up variables and call method under test
+         */
+        int i = 752;
+        Map<String, String> n = new Map4<>(i);
+        Map<String, String> nExpected = new Map4<>(i);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //boundary test case - largest int acceptable
+    public final void testIntHashTableConstructorInputMaxInt() {
+        /*
+         * Set up variables and call method under test
+         */
+        int i = Integer.MAX_VALUE;
+        Map<String, String> n = new Map4<>(i);
+        Map<String, String> nExpected = new Map4<>(i);
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    /*
+     * Kernel methods - Test cases for add
+     */
+    @Test //
+    public final void testAddtoEmpty() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest();
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5");
+        /*
+         * Call method under test
+         */
+        n.add("first", "5");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+
+    @Test //
+    public final void testAddtoNonEmpty() {
+        /*
+         * Set up variables and Call method under test
+         */
+        Map<String, String> n = this.createFromArgsTest("first", "5");
+        Map<String, String> nExpected = this.createFromArgsRef("first", "5",
+                "second", "15");
+        /*
+         * Call method under test
+         */
+        n.add("second", "15");
+        /*
+         * Assert that values of variables match expectations
+         */
+        assertEquals(nExpected, n);
+    }
+    /*
+     * Kernel methods - Test cases for remove
+     */
+
+    /*
+     * Kernel methods - Test cases for removeAny
+     */
+
+    /*
+     * Kernel methods - Test cases for value
+     */
+
+    /*
+     * Kernel methods - Test cases for hasKey
+     */
+
+    /*
+     * Kernel methods - Test cases for size
+     */
+}
