@@ -1,0 +1,10 @@
+PROGRAM A!@$% IS
+
+  INSTRUCTION one IS
+     turnright
+  END one
+
+BEGIN
+  turnright
+  one
+END A!@$%

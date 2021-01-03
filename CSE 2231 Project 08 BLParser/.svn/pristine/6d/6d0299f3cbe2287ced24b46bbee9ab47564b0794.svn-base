@@ -1,0 +1,10 @@
+PROGRAM Test IS
+
+  INSTRUCTION A!@#$@#^ IS
+     move
+     turnleft
+  END A!@#$@#^
+
+BEGIN
+  A!@#$@#^
+END Test

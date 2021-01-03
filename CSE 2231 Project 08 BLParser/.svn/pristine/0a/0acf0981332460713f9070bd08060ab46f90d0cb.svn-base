@@ -1,0 +1,9 @@
+PROGRAM Test IS
+
+  INSTRUCTION skip IS
+     skip
+  END skip
+
+BEGIN
+  skip
+END Test

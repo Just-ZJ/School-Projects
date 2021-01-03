@@ -1,0 +1,12 @@
+PROGRAM aA-0123456789-z IS
+
+    INSTRUCTION Basd-asf56874-asd IS
+        move
+        turnright
+    END Basd-asf56874-asd
+
+BEGIN
+    Basd-asf56874-asd
+    turnleft
+    Basd-asf56874-asd
+END aA-0123456789-z

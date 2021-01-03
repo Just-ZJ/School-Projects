@@ -1,0 +1,10 @@
+ PROGRAM Test IS
+
+  INSTRUCTION one IS
+     turnright
+  END one
+
+
+  turnright
+  one
+END Test

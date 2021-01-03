@@ -1,0 +1,17 @@
+  
+move
+IF next-is-friend THEN
+    turnleft
+    IF true THEN
+        move
+    ELSE
+        turnright
+    END IF
+ELSE
+    infect
+ENDIF
+IF next-is-enemy THEN
+    infect
+ELSE
+    move
+END IF

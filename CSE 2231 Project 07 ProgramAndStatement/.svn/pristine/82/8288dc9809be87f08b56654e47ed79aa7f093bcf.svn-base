@@ -1,0 +1,13 @@
+IF random THEN
+    IF next-is-not-enemy THEN
+        turnleft
+    ELSE
+        move
+    END IF
+ELSE
+    IF next-is-wall THEN
+        turnright
+    ELSE
+        move
+    END IF
+END IF

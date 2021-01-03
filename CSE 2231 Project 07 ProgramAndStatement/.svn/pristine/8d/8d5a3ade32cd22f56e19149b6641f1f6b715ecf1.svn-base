@@ -1,0 +1,11 @@
+IF next-is-wall THEN
+    move
+    move
+    turnleft
+    turnleft
+ELSE
+    turnright
+    infect
+    move
+    turnright
+END IF

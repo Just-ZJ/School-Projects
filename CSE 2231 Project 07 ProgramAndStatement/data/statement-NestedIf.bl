@@ -1,0 +1,11 @@
+IF next-is-not-enemy THEN
+    turnleft
+    IF next-is-wall THEN
+        turnright
+    END IF
+    IF random THEN
+        infect
+        move
+    END IF
+END IF
+

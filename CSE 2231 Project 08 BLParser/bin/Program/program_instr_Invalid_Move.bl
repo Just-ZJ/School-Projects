@@ -1,0 +1,9 @@
+PROGRAM Test IS
+
+  INSTRUCTION move IS
+     move
+  END move
+
+BEGIN
+  move
+END Test

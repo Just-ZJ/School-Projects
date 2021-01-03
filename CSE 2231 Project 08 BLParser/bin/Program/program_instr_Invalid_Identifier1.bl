@@ -1,0 +1,10 @@
+PROGRAM Test IS
+
+  INSTRUCTION _one IS
+     move
+     turnleft
+  END _one
+
+BEGIN
+  _one
+END Test

@@ -1,0 +1,10 @@
+PROGRAM Test IS
+
+  INSTRUCTION next-is-not-empty IS
+     move
+     turnleft
+  END next-is-not-empty
+
+BEGIN
+  next-is-not-empty
+END Test

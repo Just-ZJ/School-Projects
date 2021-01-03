@@ -1,0 +1,12 @@
+IF next-is-not-enemy THEN
+
+END IF
+IF random THEN
+
+ELSE
+
+END IF
+WHILE next-is-wall DO
+
+END WHILE
+

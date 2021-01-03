@@ -1,0 +1,13 @@
+PROGRAM Test IS
+
+  INSTRUCTION notUnique IS
+     turnright
+  END notUnique
+
+  INSTRUCTION notUnique IS
+     move
+  END notUnique
+  
+BEGIN
+  notUnique
+END Test

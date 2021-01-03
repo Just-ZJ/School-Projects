@@ -1,0 +1,6 @@
+WHILE next-is-not-enemy DO
+    move
+    turnright
+    infect
+    turnleft
+END WHILE

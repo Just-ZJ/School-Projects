@@ -1,0 +1,8 @@
+PROGRAM Test IS
+
+     turnright
+
+BEGIN
+  turnright
+  one
+END Test

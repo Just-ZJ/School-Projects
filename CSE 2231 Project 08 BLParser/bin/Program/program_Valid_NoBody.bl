@@ -1,0 +1,9 @@
+PROGRAM Test IS
+
+    INSTRUCTION one IS
+
+    END one
+
+BEGIN
+
+END Test

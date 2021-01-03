@@ -1,0 +1,9 @@
+  
+PROGRAM Instruction IS
+    INSTRUCTION one IS
+    turnleft
+    END one
+BEGIN
+    move
+    one
+END Instruction

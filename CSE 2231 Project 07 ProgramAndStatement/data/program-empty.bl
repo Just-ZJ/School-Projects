@@ -1,0 +1,9 @@
+PROGRAM EmptyProg IS
+
+ INSTRUCTION one IS
+
+  END one
+
+BEGIN
+    call
+END EmptyProg

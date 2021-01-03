@@ -1,0 +1,9 @@
+PROGRAM Test IS
+
+  INSTRUCTION infect IS
+     infect
+  END infect
+
+BEGIN
+  infect
+END Test

@@ -1,0 +1,14 @@
+WHILE next-is-wall DO
+    turnleft
+    infect
+    move
+    WHILE random DO
+        turnleft
+        infect
+        move
+    END WHILE
+    turnleft
+    infect
+    move
+END WHILE
+

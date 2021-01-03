@@ -1,0 +1,8 @@
+WHILE next-is-empty DO
+    move
+    turnleft
+    infect
+    turnright
+    move
+    skip
+END 

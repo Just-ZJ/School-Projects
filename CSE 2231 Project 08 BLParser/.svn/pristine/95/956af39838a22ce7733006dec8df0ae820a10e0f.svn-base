@@ -1,0 +1,8 @@
+IF next-is-empty 
+    move
+    turnleft
+    infect
+    turnright
+    move
+    skip
+END IF

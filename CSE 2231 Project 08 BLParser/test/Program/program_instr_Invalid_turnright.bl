@@ -1,0 +1,9 @@
+PROGRAM Test IS
+
+  INSTRUCTION turnright IS
+     turnright
+  END turnright
+
+BEGIN
+  turnright
+END Test

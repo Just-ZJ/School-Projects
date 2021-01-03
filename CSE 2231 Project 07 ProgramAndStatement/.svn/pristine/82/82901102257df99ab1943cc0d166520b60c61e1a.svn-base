@@ -1,0 +1,17 @@
+PROGRAM multiIns IS
+    INSTRUCTION stright IS
+        move
+        move
+    END stright
+    
+    INSTRUCTION two IS
+        move
+        move
+    END two
+    
+BEGIN
+    WHILE true DO
+        run
+        stright
+    END WHILE
+END multiIns

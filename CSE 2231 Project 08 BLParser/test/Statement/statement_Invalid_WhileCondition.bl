@@ -1,0 +1,8 @@
+WHILE this-is-not-a-valid-condition DO
+    move
+    turnleft
+    infect
+    turnright
+    move
+    skip
+END WHILE

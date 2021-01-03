@@ -1,0 +1,9 @@
+PROGRAM Test IS
+
+  INSTRUCTION turnleft IS
+     turnleft
+  END turnleft
+
+BEGIN
+  turnleft
+END Test
